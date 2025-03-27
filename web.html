@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION PART 2</title>
+    <style>
+        body{
+            background-color: rgb(18, 1, 18);
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        #heading{
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+        }
+        #heading2{
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+        }
+        button {
+            font-style: italic;
+            color: rgb(0, 0, 0);
+            background-color: yellow;
+            border: 2px solid white;
+            border-radius: 20px;
+            width: 130px;
+            padding: 10px;
+            margin: 20px;
+
+        }
+        button:hover{
+            color: rgb(255, 255, 255);
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+    <h1 class="heading" id="head">DOM MANIPULATION IN JAVASCRIPT BY APNA COLLEGE!</h1>
+    <h1>THIS IS DOM MANIPULATION</h1>
+    <h1>THIS IS JAVASCRIPT TUTORIALS!</h1>
+    <h1>THIS IS MY JS PRACTICS!</h1>
+    <h3 class="heading" id="head">PLEASE READ AND UNDESRTAND IT CAREFULLY:</h3>
+    <div class="para">
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas assumenda voluptatum esse sed possimus dolore velit? Minima rerum nulla, ducimus dolorum ut sed culpa suscipit consequuntur? Ea similique voluptatum non unde, necessitatibus laborum fugit ipsam rerum qui sint numquam. Ab?</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident pariatur, perspiciatis numquam adipisci ducimus dolores eos deleniti placeat dicta.</p>
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate laborum repellendus alias amet nostrum suscipit aliquid officiis voluptatum harum sed iste veritatis magni, aliquam recusandae nobis id dicta enim!</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem dolor dignissimos at esse hic doloribus. Consectetur maxime tempore aliquam porro, et voluptas corrupti assumenda nemo ab autem, atque corporis repudiandae. Necessitatibus, doloremque repellat inventore assumenda, voluptas obcaecati iusto odit porro exercitationem vitae eos tempore fugiat id repudiandae vero repellendus fuga! Ea rem aliquam, nihil deserunt at quibusdam commodi eos optio, laboriosam autem numquam provident. Soluta corrupti, voluptatum accusantium modi reiciendis repellat veniam, quis facilis molestiae voluptates quo, doloribus exercitationem! Hic atque minus accusantium. Iure explicabo nemo excepturi, quae unde vitae minima nesciunt dignissimos quasi enim. Qui temporibus amet provident.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nulla, cupiditate ipsum at iusto similique voluptatem sequi tenetur beatae, rem velit. Repellendus quibusdam suscipit fugiat illo, officia hic assumenda, excepturi, nulla modi id pariatur? Quaerat quam dolor similique incidunt pariatur eligendi, est voluptatibus impedit eveniet neque. Aliquid quo mollitia, perferendis nam officiis porro, culpa ducimus ullam, nesciunt cumque autem eaque saepe ad quis excepturi accusamus laudantium perspiciatis! Rem, distinctio ut.</p>
+    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, non reprehenderit facilis libero esse expedita ut? Nisi perferendis vel mollitia in sapiente illum neque a iste? Laudantium veniam esse deleniti, voluptatem aut voluptate eligendi consequatur nobis ipsam voluptatibus fuga quia nihil laborum sunt nostrum officia ab minus minima aperiam atque vero. Aspernatur, commodi minima voluptatum molestias cumque deleniti blanditiis fugit nesciunt numquam, aperiam hic corrupti unde suscipit, ratione nostrum incidunt vero corporis nam. Officia vitae minus, explicabo facere molestias nobis repudiandae praesentium enim sunt consectetur optio impedit omnis laboriosam quae fugiat quasi ducimus accusamus odit. Cum aut explicabo molestiae odit!</p>
+    <button>CLICK ME!</button>
+    </div>
+    </div>
+    <script>
+      //  let heading = document.querySelector("#head");
+      //  console.log(heading);
+      //  let main = heading.getAttribute("id");
+      //  console.log(main);
+
+     // let para = document.querySelector("#head");
+     // console.log(para.setAttribute("id","newHead"));
+
+    // let heading = document.querySelector("#head");
+    // console.log(heading);
+    // let main = heading.setAttribute("id","Bigheading");
+    // console.log(main);
+
+    // let heading = document.querySelector(".para");
+    // console.log(heading);
+    // let main = heading.setAttribute("class","StrangePara");
+    // console.log(main);
+
+   // let head = document.querySelector("body");
+   // console.log(head);
+    
+   // head.style.backgroundColor = "red";
+
+  // let head = document.querySelector("body");
+  // head.style.fontStyle = "italic";
+
+  //let head = document.querySelector("body");
+  //head.style.fontSize = "40px";
+
+
+  //TO CREATE AN ELEMENT:
+  //let btn = document.createElement("button");
+
+
+  //TO ADD A CREATED ELEMENT THROUGH JAVASCRIPT:
+//  let newBtn = document.createElement("button");
+//  newBtn.innerText = "Click Me!";
+//  let div = document.querySelector("#head");
+//  div.append(newBtn);
+
+
+//TO ADD HEADING AS THE NEW ELEMENT IN HTML THROUGH JS:
+//let newHead = document.createElement("h1");
+//newHead.innerText = "Hii Everyone And Welcome To The World Of JS!";
+//let head = document.querySelector("#head");
+//head.append(newHead);
+
+
+//ADDING PARAGRAPH AS A NEW ELEMENT THROUGH JS:
+//let para = document.createElement("p");
+//para.innerText = "hii my name is anthony gonsalvis and i am alone in this world full of stupids!";
+//let head = document.querySelector(".para");
+//head.append(para);
+
+
+//ADDING BUTTON AT THE STARTING OF A WEBPAGE USING A METHOD CALLED "PREPEND" IN JS:
+//let btn = document.createElement("button");
+//btn.innerText = "Order Now!";
+//let head = document.querySelector("#head");
+//head.prepend(btn);
+
+
+//let head = document.createElement("h1");
+//head.innerText = "Hii Sir I am karan aujla a punjabi rapper!";
+//let head1 = document.querySelector("#head");
+//head1.prepend(head);
+
+
+//USING BEFORE METHOD:
+//let createh1 = document.createElement("h1");
+//createh1.innerText = "Hii Sir I am from udta punjab!";
+//let head = document.querySelector("#head");
+//head.before(createh1);
+
+
+//USING AFTER METHOD:
+//let createPara = document.createElement("p");
+//createPara.innerText = "Hii Sir Johnny Lever!";
+//let head = document.querySelector("#head");
+//head.after(createPara);
+
+
+//let newElement = document.createElement("h1");
+//newElement.innerText = "Hii Sir I am from Army!";
+//let head = document.querySelector(".para");
+//head.after(newElement);
+
+
+
+//PROGRAM TO ADD A BUTTON HAVING COLOR AND FONT AT THE STARTING OF BODY:
+//let newBtn = document.createElement("button");
+//newBtn.innerText = "Click Me!";
+//newBtn.style.backgroundColor = "red";
+//newBtn.style.color = "white";
+//let body = document.querySelector("body");
+//body.prepend(newBtn);
+
+
+//let newBtn = document.createElement("button");
+//newBtn.innerText = "Click Me!";
+//newBtn.style.backgroundColor = "black";
+//newBtn.style.color = "yellow";
+//newBtn.style.border = "2px solid white";
+//newBtn.style.fontStyle = "italic";
+//let head = document.querySelector("#head");
+//head.append(newBtn);
+
+
+
+//TO REMOVE ELEMENTS:
+//let create1 = document.querySelector(".para");
+//create1.remove();
+
+//let head = document.querySelector("#head");
+//head.remove();
+
+//let para = document.querySelector("button");
+//para.remove();
+
+
+
+   </script>
+
+</body>
+</html>
